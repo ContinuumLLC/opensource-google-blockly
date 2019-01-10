@@ -1,0 +1,10 @@
+{
+  "lerna": "2.10.2",
+  "packages": ["node_modules/platform-common-vendor"],
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    }
+  },
+  "version": "independent"
+}
