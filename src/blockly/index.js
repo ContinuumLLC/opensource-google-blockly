@@ -1,1 +1,1 @@
-export { default as Blockly } from './blockly.bundle';
+export * from './google-blockly';
