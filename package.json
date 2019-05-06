@@ -13,7 +13,7 @@
   "scripts": {
     "postinstall": "if-env NODE_ENV=RMM && echo '' || npm run lerna:bootstrap",
     "lerna:bootstrap": "lerna bootstrap",
-    "clean": "rimraf build dist build lib",
+    "clean": "rimraf build dist lib coverage test-reports analytics package-lock.json",
     "build": "cross-env NODE_ENV='dt' webpack --config ./config/webpack/webpack.config.prod.js",
     "build:watch": "npm run clean && cross-env NODE_ENV='development' webpack --watch --config ./config/webpack/webpack.config.prod.js",
     "ci": "concurrently \"npm run build\""
